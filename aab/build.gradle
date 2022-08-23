@@ -1,0 +1,50 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'
+}
+
+dependencies {
+    implementation gradleApi() //必须
+    implementation localGroovy() //必须
+}
+
+def group = 'com.zly.aab' //组
+def versionA = '1.0.0' //版本
+def artifactIdA = 'myGradlePlugin' //唯一标示
+// 这个是把源码打入aar包中的任务
+task sourceJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from sourceSets.main.java.srcDirs
+}
+publishing {
+    publications {
+        // 这里的debug名字是自己起的
+        debug(MavenPublication) {
+            groupId = group
+            artifactId = artifactIdA
+            version = versionA
+            // 这里除了有debug 还有release
+            from components.java
+            // 运行任务，把源码打进去
+            artifact sourceJar
+        }
+    }
+    // 添加仓库地址
+    repositories {
+        // 本地仓库
+        maven { url uri('../repos') }
+    }
+}
+
+//将插件打包上传到本地maven仓库
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            pom.groupId = group
+//            pom.artifactId = artifactId
+//            pom.version = version
+//            //指定本地maven的路径，在项目根目录下
+//            repository(url: uri('../repos'))
+//        }
+//    }
+//}
