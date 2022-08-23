@@ -73,3 +73,5 @@ app/obj/*
 ../autotrack
 
 ../METwitterKit
+
+.repos/
