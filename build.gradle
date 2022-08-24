@@ -5,9 +5,14 @@ buildscript {
         maven {
             url uri('./repos') //指定本地maven的路径，在项目根目录下
         }
+        maven {
+            url 'https://maven.aliyun.com/repository/central/'
+        }
+        google()
     }
     dependencies {
         classpath 'com.zly.aab:myGradlePlugin:1.0.0'
+        classpath "com.android.tools.build:gradle:$agpVersion"
     }
 }
 
@@ -16,6 +21,15 @@ plugins {
     id 'com.android.library' version '7.2.0-alpha07' apply false
     id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
     id 'org.jetbrains.kotlin.jvm' version '1.6.10' apply false
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/central/'
+        }
+        google()
+    }
 }
 
 task clean(type: Delete) {

@@ -6,6 +6,11 @@ plugins {
 dependencies {
     implementation gradleApi() //必须
     implementation localGroovy() //必须
+    implementation 'org.ow2.asm:asm:9.2'
+    implementation 'org.ow2.asm:asm-commons:9.1'
+
+    implementation "com.android.tools.build:gradle-api:$agpVersion"
+    implementation "com.android.tools.build:gradle:7.2.0"//cao 这是个坑，别用「$agpVersion」，老老实实写版本号，不知道为什么
 }
 
 def group = 'com.zly.aab' //组
@@ -35,16 +40,3 @@ publishing {
         maven { url uri('../repos') }
     }
 }
-
-//将插件打包上传到本地maven仓库
-//uploadArchives {
-//    repositories {
-//        mavenDeployer {
-//            pom.groupId = group
-//            pom.artifactId = artifactId
-//            pom.version = version
-//            //指定本地maven的路径，在项目根目录下
-//            repository(url: uri('../repos'))
-//        }
-//    }
-//}

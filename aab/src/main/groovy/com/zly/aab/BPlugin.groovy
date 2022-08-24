@@ -7,6 +7,6 @@ class BPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println("==========> BPlugin")
+        println("=========================================================================================> BPlugin")
     }
 }

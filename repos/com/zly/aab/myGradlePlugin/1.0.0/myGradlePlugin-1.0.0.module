@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "7.3"
+      "version": "7.4.2"
     }
   },
   "variants": [
@@ -27,11 +27,11 @@
         {
           "name": "myGradlePlugin-1.0.0.jar",
           "url": "myGradlePlugin-1.0.0.jar",
-          "size": 2218,
-          "sha512": "22c64afb5e59209c214416597962b0c0e6013b1e34d2aaaefac050cd4e48565b40e5cbbc2ef63acbfb58c16b135360469484138c991a75ecd1b4434a74275702",
-          "sha256": "275cb9bbc5fd2b8258f63894d24211fb87ad3044a5b1fefffea11c1cfb3530ca",
-          "sha1": "a1d58aa574607c17975de54d79551f2fe1d7fdd7",
-          "md5": "7bcc91319e838143891a7090740580d5"
+          "size": 2223,
+          "sha512": "31ffe3e89ccfb5a4474f90d8604bd68e6535f3ca8a083b1a6257f443d58ed36ea47dcafe2de1db96b080826ba2e0af106975b4d29655c217ea1aab1e75908317",
+          "sha256": "26f2a16e48546ccdb7ae30418801c7d73a01c1cb33a7dc69d72219f525626751",
+          "sha1": "a9e66375eb35c595f311e38cc94b103f833f4b44",
+          "md5": "30e1d65d2a8771ef11e1df16432db59c"
         }
       ]
     },
@@ -44,15 +44,31 @@
         "org.gradle.libraryelements": "jar",
         "org.gradle.usage": "java-runtime"
       },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.1"
+          }
+        }
+      ],
       "files": [
         {
           "name": "myGradlePlugin-1.0.0.jar",
           "url": "myGradlePlugin-1.0.0.jar",
-          "size": 2218,
-          "sha512": "22c64afb5e59209c214416597962b0c0e6013b1e34d2aaaefac050cd4e48565b40e5cbbc2ef63acbfb58c16b135360469484138c991a75ecd1b4434a74275702",
-          "sha256": "275cb9bbc5fd2b8258f63894d24211fb87ad3044a5b1fefffea11c1cfb3530ca",
-          "sha1": "a1d58aa574607c17975de54d79551f2fe1d7fdd7",
-          "md5": "7bcc91319e838143891a7090740580d5"
+          "size": 2223,
+          "sha512": "31ffe3e89ccfb5a4474f90d8604bd68e6535f3ca8a083b1a6257f443d58ed36ea47dcafe2de1db96b080826ba2e0af106975b4d29655c217ea1aab1e75908317",
+          "sha256": "26f2a16e48546ccdb7ae30418801c7d73a01c1cb33a7dc69d72219f525626751",
+          "sha1": "a9e66375eb35c595f311e38cc94b103f833f4b44",
+          "md5": "30e1d65d2a8771ef11e1df16432db59c"
         }
       ]
     }
