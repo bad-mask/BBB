@@ -24,14 +24,11 @@ task sourceJar(type: Jar) {
 }
 publishing {
     publications {
-        // 这里的debug名字是自己起的
         debug(MavenPublication) {
             groupId = group
             artifactId = artifactIdA
             version = versionA
-            // 这里除了有debug 还有release
             from components.java
-            // 运行任务，把源码打进去
             artifact sourceJar
         }
     }

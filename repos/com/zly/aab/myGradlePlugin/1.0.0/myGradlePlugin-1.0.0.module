@@ -27,11 +27,11 @@
         {
           "name": "myGradlePlugin-1.0.0.jar",
           "url": "myGradlePlugin-1.0.0.jar",
-          "size": 15449,
-          "sha512": "f10c53672f880c26a4bbb9ef83ed6dff9804c57976b78ef579dbafde1fc6361c5623b7ff3e503e2c4dec9ba0a26652976037a2bc8560695c9c11d6d6b6c349b9",
-          "sha256": "d6863ffb00d6d13418c680cc3c16dc527f7cc090e53018063bb6255aa769bd63",
-          "sha1": "d77166f81d391c117563b626edd1f9aa01d4c27b",
-          "md5": "57f663b550907358265c2291551f8a7f"
+          "size": 9174,
+          "sha512": "2e591ddf69c6bd59686fcda1fb993aa3b3666667a882129b624d14c43bea45de218c42dc1fce45fcac092e9314dc9e7bfa052898aa0cedce90d985ed9a683b53",
+          "sha256": "772c2f6ada9741c13f91fa89cd6727f2f6a65e8f829223af1300c69d37e2c641",
+          "sha1": "bc3059ec1b7251d6b7931b834b53afb7e7ee1e65",
+          "md5": "cc6c8a2f185cd1aa3e9ee0822c7781db"
         }
       ]
     },
@@ -85,11 +85,11 @@
         {
           "name": "myGradlePlugin-1.0.0.jar",
           "url": "myGradlePlugin-1.0.0.jar",
-          "size": 15449,
-          "sha512": "f10c53672f880c26a4bbb9ef83ed6dff9804c57976b78ef579dbafde1fc6361c5623b7ff3e503e2c4dec9ba0a26652976037a2bc8560695c9c11d6d6b6c349b9",
-          "sha256": "d6863ffb00d6d13418c680cc3c16dc527f7cc090e53018063bb6255aa769bd63",
-          "sha1": "d77166f81d391c117563b626edd1f9aa01d4c27b",
-          "md5": "57f663b550907358265c2291551f8a7f"
+          "size": 9174,
+          "sha512": "2e591ddf69c6bd59686fcda1fb993aa3b3666667a882129b624d14c43bea45de218c42dc1fce45fcac092e9314dc9e7bfa052898aa0cedce90d985ed9a683b53",
+          "sha256": "772c2f6ada9741c13f91fa89cd6727f2f6a65e8f829223af1300c69d37e2c641",
+          "sha1": "bc3059ec1b7251d6b7931b834b53afb7e7ee1e65",
+          "md5": "cc6c8a2f185cd1aa3e9ee0822c7781db"
         }
       ]
     }

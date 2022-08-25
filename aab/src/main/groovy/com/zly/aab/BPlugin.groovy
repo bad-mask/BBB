@@ -13,7 +13,7 @@ class BPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println("==successsuccesssuccesssuccesssuccess===success============================> BPlugin")
+        println("======================================success============================> BPlugin")
 
         //在这里注册 Transform
         //AppExtension VS AndroidComponentsExtension
