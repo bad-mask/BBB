@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.zly.aab",
+    "module": "myGradlePlugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "myGradlePlugin-1.0.0.jar",
+          "url": "myGradlePlugin-1.0.0.jar",
+          "size": 15449,
+          "sha512": "f10c53672f880c26a4bbb9ef83ed6dff9804c57976b78ef579dbafde1fc6361c5623b7ff3e503e2c4dec9ba0a26652976037a2bc8560695c9c11d6d6b6c349b9",
+          "sha256": "d6863ffb00d6d13418c680cc3c16dc527f7cc090e53018063bb6255aa769bd63",
+          "sha1": "d77166f81d391c117563b626edd1f9aa01d4c27b",
+          "md5": "57f663b550907358265c2291551f8a7f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.1"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle-api",
+          "version": {
+            "requires": "7.2"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "15.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "myGradlePlugin-1.0.0.jar",
+          "url": "myGradlePlugin-1.0.0.jar",
+          "size": 15449,
+          "sha512": "f10c53672f880c26a4bbb9ef83ed6dff9804c57976b78ef579dbafde1fc6361c5623b7ff3e503e2c4dec9ba0a26652976037a2bc8560695c9c11d6d6b6c349b9",
+          "sha256": "d6863ffb00d6d13418c680cc3c16dc527f7cc090e53018063bb6255aa769bd63",
+          "sha1": "d77166f81d391c117563b626edd1f9aa01d4c27b",
+          "md5": "57f663b550907358265c2291551f8a7f"
+        }
+      ]
+    }
+  ]
+}
