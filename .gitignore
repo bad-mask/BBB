@@ -74,4 +74,5 @@ app/obj/*
 
 ../METwitterKit
 
-.repos/
+repos/*
+repos

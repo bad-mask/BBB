@@ -11,6 +11,7 @@ dependencies {
 
     implementation "com.android.tools.build:gradle-api:$agpVersion"
     implementation "com.android.tools.build:gradle:7.2.0"//cao 这是个坑，别用「$agpVersion」，老老实实写版本号，不知道为什么
+    implementation 'org.jetbrains:annotations:15.0'
 }
 
 def group = 'com.zly.aab' //组
