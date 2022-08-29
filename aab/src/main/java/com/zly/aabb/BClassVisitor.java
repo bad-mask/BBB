@@ -22,14 +22,15 @@ class BClassVisitor extends ClassVisitor {
         // void onMethodExit()：即将从这个方法出去
         // void onVisitEnd()：表示方法扫描完毕
         MethodVisitor newVisitor = new AdviceAdapter(Opcodes.ASM5, visitor, access, name, descriptor) {
+            int slotIndex = 0;
 
             @Override
             protected void onMethodEnter() {
-                int slotIndex = newLocal(Type.LONG_TYPE);
+                slotIndex = newLocal(Type.LONG_TYPE);
                 visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
                 visitVarInsn(LSTORE, slotIndex);
                 visitLdcInsn("zly_1111");
-                visitLdcInsn("\u8f93\u51fa\u65f6\u95f4  ");
+                visitLdcInsn("\u8fdb\u5165\u65f6\u95f4: ");
                 visitVarInsn(LLOAD, slotIndex);
                 visitMethodInsn(INVOKESTATIC, "java/lang/Long", "valueOf", "(J)Ljava/lang/Long;", false);
                 visitMethodInsn(INVOKESTATIC, "kotlin/jvm/internal/Intrinsics", "stringPlus", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", false);
@@ -41,12 +42,48 @@ class BClassVisitor extends ClassVisitor {
             @Override
             protected void onMethodExit(int opcode) {
                 visitLdcInsn("zly_1111");
-                visitLdcInsn("test get result");
+                visitLdcInsn( "test get result");
                 visitMethodInsn(INVOKESTATIC, "android/util/Log", "e", "(Ljava/lang/String;Ljava/lang/String;)I", false);
                 visitInsn(POP);
+
+                int slotIndex2 = newLocal(Type.LONG_TYPE);
+                visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+                visitVarInsn(LSTORE, slotIndex2);
+                visitLdcInsn("zly_1111");
+                visitLdcInsn(name + " ----- \u79bb\u5f00\u65f6\u95f4\u5dee: ");
+                visitVarInsn(LLOAD, slotIndex2);
+                visitVarInsn(LLOAD, slotIndex);
+                visitInsn(LSUB);
+                visitMethodInsn(INVOKESTATIC, "java/lang/Long", "valueOf", "(J)Ljava/lang/Long;", false);
+                visitMethodInsn(INVOKESTATIC, "kotlin/jvm/internal/Intrinsics", "stringPlus", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", false);
+                visitMethodInsn(INVOKESTATIC, "android/util/Log", "e", "(Ljava/lang/String;Ljava/lang/String;)I", false);
+                visitInsn(POP);
+
                 super.onMethodExit(opcode);
             }
         };
         return newVisitor;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

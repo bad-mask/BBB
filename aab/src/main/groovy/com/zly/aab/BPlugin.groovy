@@ -13,7 +13,7 @@ class BPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println("2022.8.29================================> BPlugin")
+        println("2022.8.29 2:39================================> BPlugin")
 
         //在这里注册 Transform
         //AppExtension VS AndroidComponentsExtension
