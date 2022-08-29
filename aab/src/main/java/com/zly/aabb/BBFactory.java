@@ -12,7 +12,6 @@ public abstract class BBFactory implements AsmClassVisitorFactory<Instrumentatio
     @NotNull
     @Override
     public ClassVisitor createClassVisitor(@NotNull ClassContext classContext, @NotNull ClassVisitor classVisitor) {
-//        return classVisitor;
         return new BClassVisitor(classVisitor);
     }
 

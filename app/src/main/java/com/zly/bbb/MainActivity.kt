@@ -1,14 +1,20 @@
 package com.zly.bbb
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.e("zly","=============> start ${System.currentTimeMillis()}")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.e("zly","=============> end    ${System.currentTimeMillis()}")
+        getResult()
     }
+
+    fun getResult() {
+
+    }
+
+
 }

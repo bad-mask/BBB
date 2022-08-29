@@ -3,7 +3,7 @@
   "component": {
     "group": "com.zly.aab",
     "module": "myGradlePlugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "myGradlePlugin-1.0.0.jar",
-          "url": "myGradlePlugin-1.0.0.jar",
-          "size": 9174,
-          "sha512": "2e591ddf69c6bd59686fcda1fb993aa3b3666667a882129b624d14c43bea45de218c42dc1fce45fcac092e9314dc9e7bfa052898aa0cedce90d985ed9a683b53",
-          "sha256": "772c2f6ada9741c13f91fa89cd6727f2f6a65e8f829223af1300c69d37e2c641",
-          "sha1": "bc3059ec1b7251d6b7931b834b53afb7e7ee1e65",
-          "md5": "cc6c8a2f185cd1aa3e9ee0822c7781db"
+          "name": "myGradlePlugin-1.0.1.jar",
+          "url": "myGradlePlugin-1.0.1.jar",
+          "size": 9359,
+          "sha512": "aaec6ef709c6aebf2398dfbf4ba497e02f4a6cdd8c66e46f1a8c97e8c4b0c182897218d8372fc963ab6c977c91db7123a1be324ccf2f62451f9ff7f2a7546e1e",
+          "sha256": "2641c27483aae72a816b71cadadacea33663b21f26fbb97d471135b27fc4312b",
+          "sha1": "6646497ec98c9e326ed0487336740e3db773acab",
+          "md5": "6562822e9868fbacf72f6e46fead76b3"
         }
       ]
     },
@@ -77,19 +77,19 @@
           "group": "org.jetbrains",
           "module": "annotations",
           "version": {
-            "requires": "15.0"
+            "requires": "16.0.1"
           }
         }
       ],
       "files": [
         {
-          "name": "myGradlePlugin-1.0.0.jar",
-          "url": "myGradlePlugin-1.0.0.jar",
-          "size": 9174,
-          "sha512": "2e591ddf69c6bd59686fcda1fb993aa3b3666667a882129b624d14c43bea45de218c42dc1fce45fcac092e9314dc9e7bfa052898aa0cedce90d985ed9a683b53",
-          "sha256": "772c2f6ada9741c13f91fa89cd6727f2f6a65e8f829223af1300c69d37e2c641",
-          "sha1": "bc3059ec1b7251d6b7931b834b53afb7e7ee1e65",
-          "md5": "cc6c8a2f185cd1aa3e9ee0822c7781db"
+          "name": "myGradlePlugin-1.0.1.jar",
+          "url": "myGradlePlugin-1.0.1.jar",
+          "size": 9359,
+          "sha512": "aaec6ef709c6aebf2398dfbf4ba497e02f4a6cdd8c66e46f1a8c97e8c4b0c182897218d8372fc963ab6c977c91db7123a1be324ccf2f62451f9ff7f2a7546e1e",
+          "sha256": "2641c27483aae72a816b71cadadacea33663b21f26fbb97d471135b27fc4312b",
+          "sha1": "6646497ec98c9e326ed0487336740e3db773acab",
+          "md5": "6562822e9868fbacf72f6e46fead76b3"
         }
       ]
     }

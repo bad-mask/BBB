@@ -10,7 +10,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.zly.aab:myGradlePlugin:1.0.0'
+        classpath 'com.zly.aab:myGradlePlugin:1.0.1'
         classpath "com.android.tools.build:gradle:$agpVersion"
     }
 }
